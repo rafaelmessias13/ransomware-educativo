@@ -43,15 +43,16 @@ Projeto desenvolvido no contexto do:
 
 ## Estrutura do Projeto
 
-projeto-malware-educativo/
-├── crypto_utils.py # Funções de criptografia e descriptografia
-├── encrypt_main.py # Script para CRIPTOGRAFAR um arquivo
-├── decrypt_main.py # Script para DESCRIPTOGRAFAR um arquivo
-├── ransomware_main.py # Script com menu (1 = criptografar, 2 = descriptografar)
-├── filekey.key # Chave simétrica gerada (NÃO versionar em repositório público)
-├── arquivos_teste/
-│ └── teste.txt # Arquivo de teste
-└── prints/ # Capturas de tela de execução (opcional)
+    projeto-malware-educativo/
+    ├── crypto_utils.py       # Funções de criptografia e descriptografia
+    ├── encrypt_main.py       # Script para CRIPTOGRAFAR um arquivo
+    ├── decrypt_main.py       # Script para DESCRIPTOGRAFAR um arquivo
+    ├── ransomware_main.py    # Script com menu (1 = criptografar, 2 = descriptografar)
+    ├── filekey.key           # Chave simétrica gerada 
+    ├── arquivos_teste/
+    │   └── teste.txt         # Arquivo de teste
+    └── prints/               # Capturas de tela de execução 
+
 
 
 ---
@@ -154,27 +155,23 @@ text
 
 ---
 
-## Exemplos de Execução (prints)
+## Exemplos de Execução
 
-A pasta `prints/` contém capturas de tela demonstrando o fluxo:
+### 1. Criptografando arquivo
 
-1. `prints/criptografando_menu.png`  
-   - Execução do `ransomware_main.py`
-   - Escolha da opção `1 - Criptografar arquivo`
-   - Saída no terminal indicando que o arquivo `arquivos_teste/teste.txt` foi criptografado.
+![Menu criptografando](Prints/criptografando_menu.png)
 
-2. `prints/teste_criptografado.png`  
-   - Conteúdo do `teste.txt` após a criptografia.
-   - O arquivo aparece como um grande token Fernet (texto “embaralhado” em base64), ilegível para o usuário.
+### 2. Arquivo após criptografia
 
-3. `prints/descriptografando_menu.png`  
-   - Execução novamente do `ransomware_main.py`
-   - Escolha da opção `2 - Descriptografar arquivo`
-   - Saída no terminal indicando que o arquivo `arquivos_teste/teste.txt` foi descriptografado.
+![Arquivo criptografado](Prints/teste_criptografado.png)
 
-4. `prints/teste_descriptografado.png`  
-   - Conteúdo original de `teste.txt` restaurado.
-   - Mostra claramente o texto legível, evidenciando o ciclo completo: texto plano → criptografado → texto plano.
+### 3. Descriptografando arquivo
+
+![Menu descriptografando](Prints/descriptografando_menu.png)
+
+### 4. Arquivo restaurado
+
+![Arquivo descriptografado](Prints/teste_descriptografado.png)
 
 Esses prints ajudam a visualizar o funcionamento do protótipo e são úteis para apresentação do desafio no bootcamp.
 
