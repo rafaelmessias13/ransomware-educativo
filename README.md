@@ -85,7 +85,7 @@ Isso permite simular, de forma controlada, o comportamento de:
 
 pip install cryptography
 
-text
+
 
 ---
 
@@ -109,7 +109,7 @@ Rode:
 
 python encrypt_main.py
 
-text
+
 
 - O arquivo `arquivos_teste/teste.txt` será criptografado.
 - Ao abrir, o conteúdo estará ilegível (token Fernet em base64).
@@ -122,14 +122,14 @@ Rode:
 
 python decrypt_main.py
 
-text
+
 
 - Se o arquivo foi criptografado com a MESMA chave (`filekey.key`), o conteúdo volta a ser legível.
 - Se a chave não corresponder ou o arquivo estiver corrompido, a saída será algo como:
 
 Erro: o arquivo não está criptografado com essa chave ou foi corrompido.
 
-text
+
 
 ---
 
@@ -139,7 +139,7 @@ Rode:
 
 python ransomware_main.py
 
-text
+
 
 Exemplo de saída:
 
@@ -148,7 +148,7 @@ Exemplo de saída:
 2 - Descriptografar arquivo
 Escolha uma opção (1 ou 2):
 
-text
+
 
 - Digite `1` para criptografar `arquivos_teste/teste.txt`.
 - Digite `2` para descriptografar o mesmo arquivo.
